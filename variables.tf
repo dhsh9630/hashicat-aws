@@ -6,12 +6,13 @@
 # prompted to enter it (or define it via config file or command line flags.)
 
 variable "prefix" {
+  default = "myjeong"
   description = "This prefix will be included in the name of most resources."
 }
 
 variable "region" {
   description = "The region where the resources are created."
-  default     = "us-east-1"
+  default     = "ap-southeast-1"
 }
 
 variable "address_space" {
@@ -47,4 +48,12 @@ variable "width" {
 variable "placeholder" {
   default     = "placekitten.com"
   description = "Image-as-a-service URL. Some other fun ones to try are fillmurray.com, placecage.com, placebeard.it, loremflickr.com, baconmockup.com, placeimg.com, placebear.com, placeskull.com, stevensegallery.com, placedog.net"
+}
+
+variable "AWS_ACCESS_KEY_ID" {
+  default     = "AKIAVDWE3OESACR4OD4G"
+}
+
+variable "AWS_SECRET_ACCESS_KEY" {
+  default     = "NtqvKoumFOu8TgAzzKLhq7hcdHlGileWBlEgxj7x"
 }
